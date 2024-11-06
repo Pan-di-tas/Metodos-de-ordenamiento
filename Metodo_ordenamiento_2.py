@@ -1,8 +1,8 @@
-# Lista de palabras
+
 palabras = ["manzana", "naranja", "banana", "pera", "uva", "kiwi"]
 print("Lista original:", palabras)
 
-# 1. Método de Burbuja con proceso visible
+#Método Burbuja
 def burbuja(arr):
     n = len(arr)
     print("\nProceso de ordenamiento por Burbuja:")
@@ -13,7 +13,7 @@ def burbuja(arr):
             print(f"Paso {i}-{j}: {arr}")
     return arr
 
-# 2. Método de Inserción con proceso visible
+#Método Inserción
 def insercion(arr):
     print("\nProceso de ordenamiento por Inserción:")
     for i in range(1, len(arr)):
@@ -26,7 +26,7 @@ def insercion(arr):
         arr[j + 1] = key
     return arr
 
-# 3. Método de Selección con proceso visible
+#Método Selección Directa
 def seleccion(arr):
     print("\nProceso de ordenamiento por Selección:")
     for i in range(len(arr)):
@@ -38,12 +38,12 @@ def seleccion(arr):
         print(f"Paso {i}: {arr}")
     return arr
 
-# Copias de la lista original
+#Copias
 palabras_burbuja = palabras[:]
 palabras_insercion = palabras[:]
 palabras_seleccion = palabras[:]
 
-# Ordenar usando cada método
+#Uso
 print("\nLista original:", palabras)
 print("Resultado final por Burbuja:", burbuja(palabras_burbuja))
 print("Resultado final por Inserción:", insercion(palabras_insercion))
