@@ -39,7 +39,7 @@ def seleccion(arr):
         print(f"Paso {i}: {arr}")
     return arr
 
-#Original
+#Copias
 numeros_burbuja = numeros[:]
 numeros_insercion = numeros[:]
 numeros_seleccion = numeros[:]
